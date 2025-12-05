@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Image Example</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+    }
+
+    h2 {
+      margin-top: 30px;
+    }
+
+    img {
+      width: 80%;
+      max-width: 700px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: 0.3s;
+    }
+
+    /* Default image for large screens (above 700px) */
+    .responsive-img {
+      content: url("photo-1505740420928-5e560c06d30e.jpg"); /* Replace with your large image name */
+    }
+
+    /* Change image for small screens (below 700px) */
+    @media (max-width: 700px) {
+      .responsive-img {
+        content: url("headphones-displayed-against-dark-background_157027-4466.avif"); /* Replace with your small image name */
+      }
+    }
+  </style>
+</head>
+<body>
+  <h2>Responsive Image Demo</h2>
+  <img class="responsive-img" src="headphones-displayed-against-dark-background_157027-4466.avif" alt="Responsive Image">
+</body>
+</html>
+    
+ 
+    
